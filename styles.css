@@ -2,19 +2,87 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -22,26 +90,191 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #1F2937;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50%;
+}
+
+nav h1 {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.nav-links {
+    font-size: 18px;
+    font-weight: 100;
+    color: #E5E7EB;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-container {
+    background-color: #1F2937;
+    display: flex;
+    height: 50%;
+}
+
+.hero-text {
+    margin-left: 15rem;
+    margin-top: 2%;
+    width: 35%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F9FAF8;
+}
+
+.hero-text p {
+    font-size: 18px;
+    font-weight: 100;
+    color: #E5E7EB;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 90%;
+}
+
+.hero-text button {
+    background-color: #3883F6;
+    color: #E5E7EB;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.3rem;
+    width: 8rem;
+}
+
+.hero-image {
+    margin: 2rem 5rem;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15rem;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.item svg {
+    height: 100px;
+    width: 100px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E2E7EB;
+    margin: 4rem 20rem;
+    padding: 5rem;
+}
+
+.quote-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50rem;
+    background-color: #3883F6;
+    color: #E2E7EB;
+    border-radius: 3rem;
+    padding: 5rem;
+    margin: 5rem;
+}
+
+.cta-container button {
+    color: #E2E7EB;
+    background-color: #3883F6;
+    padding: 0.5rem;
+    width: 10rem;
+    border: 1px solid #E2E7EB;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+.cta-text h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #E2E7EB;
+    text-align: center;
+    padding: 3rem;
 }
